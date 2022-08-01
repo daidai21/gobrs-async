@@ -86,6 +86,7 @@ public class TaskLoader {
         for (TaskActuator process : begins) {
             /**
              * Start the thread to perform tasks without any dependencies
+             * 启动线程以执行没有任何依赖关系的任务
              */
             startProcess(process);
         }
@@ -119,6 +120,7 @@ public class TaskLoader {
 
     /**
      * The process is interrupted by a task exception
+     * 该过程被任务异常中断
      *
      * @param errorCallback
      */
@@ -177,6 +179,7 @@ public class TaskLoader {
 
     /**
      * The main process interrupts and waits for the task to flow
+     * 主进程中断并等待任务流动
      */
     private void waitIfNecessary() {
         try {
@@ -206,6 +209,7 @@ public class TaskLoader {
         if (timeout > 0 || taskActuator.getGobrsAsyncProperties().isTaskInterrupt()) {
             /**
              * If you need to interrupt then you need to save all the task threads and you need to manipulate shared variables
+             * 如果需要中断，则需要保存所有任务线程，并需要操作共享变量
              */
             lock.lock();
             try {
@@ -220,6 +224,7 @@ public class TaskLoader {
         } else {
             /**
              * Run the command without setting the timeout period
+             * 在不设置超时时间的情况下运行命令
              */
             Future<?> submit = executorService.submit(taskActuator);
             futuresAsync.put(taskActuator.task, submit);
@@ -253,6 +258,7 @@ public class TaskLoader {
 
     /**
      * Encapsulate return parameter
+     * 封装返回参数
      *
      * @param begins
      * @return

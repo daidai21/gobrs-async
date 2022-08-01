@@ -3,7 +3,7 @@ package com.gobrs.async;
 /**
  * @program: gobrs-async-starter
  * @ClassName TaskActuator
- * @description: task executor task decorator
+ * @description: task executor task decorator  任务执行器任务装饰器
  * @author: sizegang
  * @create: 2022-03-16
  **/
@@ -41,6 +41,7 @@ class TaskActuator implements Runnable, Cloneable {
 
     /**
      * Upstream dependent quantity
+     * 上游相关数量
      */
     private volatile int upstreamDepdends;
 
@@ -107,6 +108,7 @@ class TaskActuator implements Runnable, Cloneable {
 
                 /**
                  * Unified front intercept
+                 * 统一前截距
                  */
                 taskLoader.preInterceptor(parameter, task.getName());
 
@@ -134,6 +136,7 @@ class TaskActuator implements Runnable, Cloneable {
             }
             /**
              * Determine whether the process is interrupted
+             * 确定过程是否中断
              */
             if (taskLoader.isRunning().get()) {
                 nextTask(taskLoader);
@@ -172,6 +175,7 @@ class TaskActuator implements Runnable, Cloneable {
         }
     }
 
+    // 准备
     private void preparation() {
         if (task.isExclusive()) {
             List<AsyncTask> asyncTaskList = upwardTasksMap.get(task);
@@ -280,6 +284,7 @@ class TaskActuator implements Runnable, Cloneable {
 
     /**
      * Release the number of dependent tasks
+     * 释放从属任务的数量
      *
      * @return
      */

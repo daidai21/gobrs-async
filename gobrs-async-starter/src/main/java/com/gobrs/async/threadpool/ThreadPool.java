@@ -17,11 +17,13 @@ import static com.gobrs.async.def.DefaultConfig.*;
 public class ThreadPool {
     /**
      * number of core threads
+     * 核心线程数
      */
     private Integer corePoolSize = calculateCoreNum();
 
     /**
      * maximum number of threads
+     * 最大线程数
      */
     private Integer maxPoolSize = corePoolSize + (corePoolSize >> 1);
 

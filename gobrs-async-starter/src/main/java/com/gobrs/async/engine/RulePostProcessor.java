@@ -26,8 +26,9 @@ import java.util.Optional;
  * @author sizegang1
  * @program: gobrs-async
  * @ClassName RulePostProcessor
- * @description: Task flow resolver
+ * @description: Task flow resolver 任务流解析器
  * The implementation ApplicationListener gets the Spring context, which in turn gets the Bean instance
+ * 实现ApplicationListener获取Spring上下文，而后者又获取Bean实例
  **/
 public class RulePostProcessor implements ApplicationListener<ApplicationReadyEvent> {
 

@@ -15,10 +15,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @program: gobrs-async-starter
  * @ClassName AsyncTask
- * @description:
+ * @description: 异步任务
  * @author: sizegang
  * @create: 2022-03-16
  **/
+// TODO: 待看
 public abstract class AsyncTask<Param, Result> implements GobrsTask<Param, Result> {
 
     Logger logger = LoggerFactory.getLogger(AsyncTask.class);
@@ -39,12 +40,14 @@ public abstract class AsyncTask<Param, Result> implements GobrsTask<Param, Resul
 
     /**
      * if true => execute when any of parentTasks finished
+     * 如果为true=>则在任何parentTasks完成时执行
      */
 
     private boolean any = false;
 
     /**
      * Whether any interruption ends other dependent tasks
+     * 任何中断是否结束其他相关任务
      */
     private boolean exclusive = false;
 

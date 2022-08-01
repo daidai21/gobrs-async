@@ -12,6 +12,7 @@ import java.lang.annotation.Target;
  * @program: gobrs-async-core
  * @author: sizegang
  * @date 2022-04-07
+ * 任务注解
  **/
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
@@ -33,13 +34,14 @@ public @interface Task {
 
     /**
      * Whether to continue executing subtasks after a task fails
-     *
+     * 当子任务失败了是否执行
      * @return
      */
     boolean failSubExec() default false;
 
     /**
      * Retry times
+     * 重试次数
      *
      * @return
      */

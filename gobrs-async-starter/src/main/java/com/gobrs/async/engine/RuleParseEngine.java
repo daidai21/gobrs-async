@@ -22,11 +22,12 @@ import static com.gobrs.async.def.DefaultConfig.RULE_EXCLUSIVE;
  * @author sizegang1
  * @program: gobrs-async
  * @ClassName RuleParseEngine
- * @description:
+ * @description: 规则解析引擎
  * @author: sizegang
  * @Version 1.0
  * @date 2022-02-05 12:07
  **/
+// TODO
 public class RuleParseEngine<T> extends AbstractEngine {
 
     @Resource

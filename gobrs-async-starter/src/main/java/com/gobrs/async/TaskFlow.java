@@ -26,6 +26,7 @@ public class TaskFlow {
      */
     private final IdentityHashMap<AsyncTask, List<AsyncTask>> denpendedTasks = new IdentityHashMap<>();
 
+    // TODO
     synchronized TaskReceive after(final AsyncTask... asyncTasks) {
 
         for (AsyncTask handler : asyncTasks) {
@@ -45,9 +46,11 @@ public class TaskFlow {
         return builder;
     }
 
+    // TODO： 是不是这里的 asyncTasks 是能并行的？
     synchronized TaskReceive start(List<AsyncTask> asyncTasks) {
         /**
          * Building task groups
+         * 任务组
          */
         TaskReceive builder = new TaskReceive(this, asyncTasks);
         return builder;
@@ -57,7 +60,7 @@ public class TaskFlow {
         return denpendedTasks;
     }
 
-
+    // 添加依赖任务
     void addDependency(AsyncTask from, AsyncTask to) {
         // create
         if (!denpendedTasks.containsKey(from)) {

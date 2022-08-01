@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @program: gobrs-async-core
  * @ClassName GobrsPrint
- * @description:
+ * @description: 启动的时候打印logo之类的信息
  * @author: sizegang
  * @create: 2022-04-09
  **/

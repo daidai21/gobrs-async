@@ -3,7 +3,7 @@ package com.gobrs.async.exception;
 /**
  * @program: gobrs-async-starter
  * @ClassName GobrsAsyncException
- * @description:
+ * @description: 框架内部的错误
  * @author: sizegang
  * @create: 2022-03-16
  **/

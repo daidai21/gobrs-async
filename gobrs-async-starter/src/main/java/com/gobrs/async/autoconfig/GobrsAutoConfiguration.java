@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @program: gobrs
  * @ClassName GobrsAutoConfiguration  auto config
- * @description:
+ * @description: 自动加载
  * @author: sizegang
  * @create: 2022-01-08 18:21
  * @Version 1.0

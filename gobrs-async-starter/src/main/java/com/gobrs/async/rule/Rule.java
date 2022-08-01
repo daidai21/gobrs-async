@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * @program: gobrs-async
  * @ClassName Rule
- * @description:
+ * @description: 编排规则包装体
  * @author: sizegang
  * @create: 2022-01-26 01:39
  * @Version 1.0

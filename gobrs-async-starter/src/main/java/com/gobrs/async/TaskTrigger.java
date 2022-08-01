@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutorService;
 
 /**
  * @program: gobrs-async-starter
- * @description: Task preloader
+ * @description: Task preloader 任务预加载程序
  * @author: sizegang
  * @create: 2022-03-16
  **/
@@ -101,6 +101,7 @@ class TaskTrigger {
         IdentityHashMap<AsyncTask, TaskActuator> newProcessMap = new IdentityHashMap<>(prepareTaskMap.size());
         /**
          * Create a task loader, A task flow corresponds to a taskLoader
+         * 创建一个任务加载器，一个任务流对应一个任务加载程序
          */
         TaskLoader loader = new TaskLoader(threadPoolFactory.getThreadPoolExecutor(), newProcessMap, timeout);
         TaskSupport support = getSupport(param);
@@ -108,11 +109,13 @@ class TaskTrigger {
         support.setTaskLoader(loader);
         /**
          * The thread pool is obtained from the factory, and the thread pool parameters can be dynamically adjusted
+         * 线程池从工厂获得，可以动态调整线程池参数
          */
         support.setExecutorService(threadPoolFactory.getThreadPoolExecutor());
         for (AsyncTask task : prepareTaskMap.keySet()) {
             /**
              * clone Process for Thread isolation
+             * 用于线程隔离的克隆进程
              */
             TaskActuator processor = (TaskActuator) prepareTaskMap.get(task).clone();
             processor.init(support, param);
@@ -124,6 +127,7 @@ class TaskTrigger {
 
     /**
      * Task flow End tasks
+     * 任务流结束任务
      */
     private class TerminationTask extends TaskActuator {
 
@@ -147,6 +151,7 @@ class TaskTrigger {
 
     /**
      * Assistant task, help the task process to finish properly
+     * 辅助任务，帮助任务流程正确完成
      *
      * @param <P>
      * @param <R>

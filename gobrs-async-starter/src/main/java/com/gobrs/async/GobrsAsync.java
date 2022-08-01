@@ -15,7 +15,7 @@ import java.util.Optional;
 /**
  * @program: gobrs-async-starter
  * @ClassName gobrs-Async
- * @description: task process executor
+ * @description: task process executor  任务流程执行器
  * @author: sizegang
  * @create: 2022-03-16
  **/

@@ -5,10 +5,11 @@ import com.gobrs.async.TaskSupport;
 /**
  * @program: gobrs-async-core
  * @ClassName ProxyTask
- * @description:
+ * @description: 代理任务
  * @author: sizegang
  * @create: 2022-04-17
  **/
+// TODO: 是不是浅拷贝用的？
 public class ProxyTask implements GobrsTask{
 
     private AsyncTask asyncTask;

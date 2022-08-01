@@ -2,7 +2,7 @@ package com.gobrs.async.callback;
 
 /**
  * @program: gobrs-async-core
- * @ClassName TaskPreInterceptor
+ * @ClassName TaskPreInterceptor 任务执行前拦截器
  * @description:
  * @author: sizegang
  * @create: 2022-03-23

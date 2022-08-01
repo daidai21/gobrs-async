@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @program: gobrs-async-core
  * @ClassName ThermalLoading
- * @description:
+ * @description: 规则加载预热的具体实现
  * @author: sizegang
  * @create: 2022-04-07
  **/

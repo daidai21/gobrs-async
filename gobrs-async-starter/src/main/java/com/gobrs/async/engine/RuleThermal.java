@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @program: gobrs-async-core
  * @ClassName RuleFacade
- * @description:
+ * @description: 规则外观 规则预热
  * @author: sizegang
  * @create: 2022-04-08
  **/

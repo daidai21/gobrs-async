@@ -4,6 +4,7 @@ import com.gobrs.async.enums.ResultState;
 
 /**
  * Single task execution result encapsulation
+ * 单个任务的结果
  */
 public class TaskResult<V> {
     /**

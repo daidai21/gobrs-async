@@ -3,7 +3,7 @@ package com.gobrs.async.domain;
 /**
  * @program: gobrs-async-starter
  * @ClassName AsyncParam
- * @description:
+ * @description: 任务参数
  * @author: sizegang
  * @create: 2022-03-20
  **/

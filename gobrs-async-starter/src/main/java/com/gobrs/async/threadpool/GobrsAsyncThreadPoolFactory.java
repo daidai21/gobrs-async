@@ -7,7 +7,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * @program: gobrs-async-starter
  * @ClassName GobrsAsyncThreadPoolFactory
- * @description: Thread pool factory
+ * @description: Thread pool factory 线程池工厂
  * @author: sizegang
  * @create: 2022-02-20
  * @Version 1.0

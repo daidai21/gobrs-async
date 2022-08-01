@@ -5,7 +5,7 @@ import com.gobrs.async.exception.GobrsAsyncException;
 /**
  * @program: gobrs-async-starter
  * @ClassName TimeoutException
- * @description:
+ * @description: 任务超时错误
  * @author: sizegang
  * @create: 2022-03-16
  **/

@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * @author sizegang1
  * @program: gobrs-async
- * @ClassName AbstractEngine
+ * @ClassName AbstractEngine 抽象引擎
  * @description:
  * @author: sizegang
  * @Version 1.0
@@ -21,7 +21,7 @@ public abstract class AbstractEngine implements RuleEngine {
 
 
     /**
-     * Process rule analysis
+     * Process rule analysis 处理规则分析
      * @param rule
      */
     @Override
@@ -31,10 +31,12 @@ public abstract class AbstractEngine implements RuleEngine {
         for (Rule r : rules) {
             /**
              * true rule enforcer
+             * 真正的规则执行者
              */
             doParse(r, false);
             /**
              * Trigger task ready to execute
+             * 触发器任务已准备好执行
              */
             gobrsAsync.readyTo(r.getName());
         }

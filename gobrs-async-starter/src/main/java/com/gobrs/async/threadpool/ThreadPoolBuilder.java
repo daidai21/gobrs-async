@@ -12,7 +12,7 @@ import static com.gobrs.async.def.DefaultConfig.THREADPOOLQUEUESIZE;
 /**
  * @program: gobrs-async-core
  * @ClassName Builder
- * @description:
+ * @description: 线程池建造者
  * @author: sizegang
  * @create: 2022-03-26
  **/
@@ -61,6 +61,7 @@ public class ThreadPoolBuilder {
 
     /**
      * Whether to guard the thread
+     * 非守护线程
      */
     private boolean isDaemon = false;
 

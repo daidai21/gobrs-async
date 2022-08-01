@@ -7,7 +7,7 @@ import com.gobrs.async.task.AsyncTask;
 /**
  * @program: gobrs-async-starter
  * @ClassName ErrorCallback
- * @description: Exception callback encapsulation
+ * @description: Exception callback encapsulation 异常回调封装
  * @author: sizegang
  * @create: 2022-03-20
  **/

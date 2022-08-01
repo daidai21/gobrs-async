@@ -9,6 +9,7 @@ import org.springframework.context.ApplicationContextAware;
 /**
  * @author sizegang1
  * @date 2022-01-27 23:56 2022-01-27 23:56
+ * 获取spring运行时的bean之类用的
  */
 public class GobrsSpring implements ApplicationContextAware, BeanFactoryPostProcessor {
 

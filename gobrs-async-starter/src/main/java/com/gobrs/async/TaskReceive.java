@@ -21,6 +21,7 @@ public class TaskReceive {
      */
     private List<AsyncTask> cacheTaskList;
 
+    // 构建
     TaskReceive(TaskFlow taskFlow, List<AsyncTask> taskList) {
         synchronized (taskFlow) {
             this.taskFlow = taskFlow;
@@ -35,6 +36,7 @@ public class TaskReceive {
         }
     }
 
+    // TODO
     public TaskReceive then(boolean clear, AsyncTask... asyncTasks) {
         synchronized (taskFlow) {
             for (AsyncTask from : this.cacheTaskList) {

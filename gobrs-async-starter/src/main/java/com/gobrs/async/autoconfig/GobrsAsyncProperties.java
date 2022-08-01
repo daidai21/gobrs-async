@@ -12,7 +12,7 @@ import com.gobrs.async.rule.Rule;
  * @author sizegang1
  * @program: gobrs
  * @ClassName BootstrapProperties
- * @description:
+ * @description: 框架属性加载
  * @author: sizegang
  * @create: 2022-01-08 17:30
  * @Version 1.0
@@ -42,27 +42,31 @@ public class GobrsAsyncProperties {
 
     /**
      * Whether the execution exception interrupts the workflow
+     * 执行异常是否中断工作流
      */
     private boolean taskInterrupt = false;
 
 
     /**
      * Whether global parameter dataContext mode  Parameter context
+     * 是否全局参数dataContext模式参数context
      */
     private boolean paramContext = true;
 
     /**
      * Whether transaction task
+     * 是否是事务任务
      */
     private boolean transaction = false;
 
     /**
      * Default timeout
+     * 默认超时时间
      * @return
      */
     private long timeout = 3000;
 
-
+    // TODO
     private boolean relyDepend = false;
 
 

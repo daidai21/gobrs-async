@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @program: gobrs-async-starter
  * @ClassName AsyncResult
- * @description: Process results
+ * @description: Process results 总的任务结果
  * @author: sizegang
  * @create: 2022-03-19
  **/

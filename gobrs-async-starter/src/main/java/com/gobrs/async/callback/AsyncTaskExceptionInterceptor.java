@@ -6,7 +6,7 @@ import java.util.concurrent.CompletionException;
 
 /**
  * @program: gobrs-async
- * @ClassName AsyncExceptionInterceptor
+ * @ClassName AsyncExceptionInterceptor 异常捕获拦截器
  * @description:
  * @author: sizegang
  * @create: 2022-02-19 22:41
